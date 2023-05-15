@@ -3,17 +3,19 @@
 #Assignment 6
 
 # create class for television
-class television(self, status, channel, volume):
+class television:
     # constructor
-    def __init__(self):
+    def __init__(self, status, channel, volume):
         self.status = status
         self.channel = channel
         self.volume = volume
         
 # Television ON
     def status_ON(self):
-        print("The TV is ", self.status)
+        print("The TV is", self.status)
 # Television OFF
+    def status_OFF(self):
+        print("The TV is", self.status)
 # Determine the current channel
 # Setting the channel to another channel
 # Determine the current volume of the TV
@@ -23,5 +25,5 @@ class television(self, status, channel, volume):
 # Volume UP
 # Volume DOWN
 
-TV = television('television', 'ON')
-TV.status_ON()
+TV = television('OFF', 2, 5)
+TV.status_OFF()
