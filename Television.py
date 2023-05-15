@@ -5,7 +5,7 @@
 # create class for television
 class television:
     # constructor
-    def __init__(self, status, channel, volume):
+    def __init__(self, status, channel, volume,):
         self.status = status
         self.channel = channel
         self.volume = volume
@@ -19,14 +19,13 @@ class television:
 # Determine the current channel
     def get_channel(self):
         print ("You're currently at the channel num.", self.channel)
-        retry = input(str("Do you wish to change the channel? Y/N: ")).upper()
+        # Setting the channel to another channel
+        retry = input("Do you wish to change a channel? Y/N: ").upper()
         if retry == 'Y':
-            pass
+            change_channel = input(int("What channel do you want?: "))
+            return self.channel
         else:
-            print(self.channel + 1)
-# Setting the channel to another channel
-    def set_channel(self):
-        print ("You're currently now at the channel num.", self.channel)
+            pass
 # Determine the current volume of the TV
 # Setting the volume to another VolumeLevel
 # Channel UP
