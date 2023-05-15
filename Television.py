@@ -22,7 +22,8 @@ class television:
         # Setting the channel to another channel
         retry = input("Do you wish to change a channel? Y/N: ").upper()
         if retry == 'Y':
-            change_channel = input(int("What channel do you want?: "))
+            self.channel = input(str("What channel do you want?: "))
+            print ("You're currently at the channel num.", self.channel, "now")
             return self.channel
         else:
             pass
