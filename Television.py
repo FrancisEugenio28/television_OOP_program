@@ -10,7 +10,7 @@ class television:
         self.channel = channel
         self.volume = volume
         
-# Television ON
+# Television Status
     def TV_status(self):
         if self.status == 'ON':
             print("The TV is", self.status)
@@ -19,6 +19,11 @@ class television:
 # Determine the current channel
     def get_channel(self):
         print ("You're currently at the channel num.", self.channel)
+        retry = input(str("Do you wish to change the channel? Y/N: ")).upper()
+        if retry == 'Y':
+            pass
+        else:
+            print(self.channel + 1)
 # Setting the channel to another channel
     def set_channel(self):
         print ("You're currently now at the channel num.", self.channel)
