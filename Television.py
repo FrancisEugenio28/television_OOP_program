@@ -17,6 +17,8 @@ class television:
     def status_OFF(self):
         print("The TV is", self.status)
 # Determine the current channel
+    def get_channel(self):
+        print ("Your currently at the channel num.", self.channel)
 # Setting the channel to another channel
 # Determine the current volume of the TV
 # Setting the volume to another VolumeLevel
@@ -26,4 +28,5 @@ class television:
 # Volume DOWN
 
 TV = television('OFF', 2, 5)
-TV.status_OFF()
+TV.status_ON()
+TV.get_channel()
