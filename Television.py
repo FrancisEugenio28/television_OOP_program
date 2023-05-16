@@ -28,7 +28,16 @@ class television:
         else:
             pass
 # Determine the current volume of the TV
-# Setting the volume to another VolumeLevel
+    def get_volume(self):
+        print ("You're current volume level is", self.volume)
+        # Setting the volume to another VolumeLevel
+        retry = input("Do you wish to change the volume? Y/N: ").upper()
+        if retry == 'Y':
+            self.volume = input(str("What volume level do you want?: "))
+            print ("You're current volume level is", self.volume, "now")
+            return self.volume
+        else:
+            pass
 # Channel UP
 # Channel DOWN
 # Volume UP
