@@ -39,6 +39,10 @@ class television:
         else:
             pass
 # Channel UP
+    def channel_Up(self):
+        self.channel + 1 
+        print("You're currently at the channel num.", self.channel, "now")
+        return self.channel     
 # Channel DOWN
 # Volume UP
 # Volume DOWN
@@ -46,4 +50,5 @@ class television:
 TV1 = television('ON', 2, 5)
 TV1.TV_status()
 TV1.get_channel()
+TV1.get_volume()
 
