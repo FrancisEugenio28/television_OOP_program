@@ -18,3 +18,6 @@ tv1.channel_down()
 
 # Add the volume
 tv1.volume_up()
+
+# Minus the volume
+tv1.volume_down()
