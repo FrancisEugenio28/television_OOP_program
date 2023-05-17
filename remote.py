@@ -2,7 +2,11 @@ from Television import *
 
 tv1 = television('ON', 1, 1)
 # print all the instances from the character
-tv1.TV_status()
-tv1.get_channel()
-tv1.get_volume()
+print(tv1.TV_status(), tv1.get_channel(), tv1.get_volume())
+
+# modify instance variables
+tv1.status = 'OFF'
+tv1.channel = 69
+tv1.volume = 50
+print("your TV is currently", tv1.status,". Also it's on channel", tv1.channel,"with a volume level of", tv1.volume)
 

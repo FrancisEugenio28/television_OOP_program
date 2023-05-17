@@ -15,7 +15,7 @@ class television:
         if self.status == 'ON':
             print("The TV is", self.status)
         else:
-            print("The TV is", self.status)
+            print("The TV is OFF")
 # Determine the current channel
     def get_channel(self):
         print ("You're currently at the channel num.", self.channel)
