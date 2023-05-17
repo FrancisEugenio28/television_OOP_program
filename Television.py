@@ -54,7 +54,7 @@ class television:
         print ("You're current volume level is", self.volume, "now")
         return self.volume
 # Volume DOWN
-    def volume_up(self):
+    def volume_down(self):
         self.volume -= 1
         print ("You're current volume level is", self.volume, "now")
         return self.volume
